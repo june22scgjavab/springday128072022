@@ -1,0 +1,52 @@
+
+public class Address{}
+
+
+public class Employee {
+private int id;
+private Address address=new Address();
+} 
+--------------------------------------------------------------------------
+public class Address{}
+
+
+public class Employee {
+private int id;
+private Address address;
+public Employee(int id,Address address){
+this.id=id;
+this.address=address;
+}
+} 
+
+public class Tester{
+public static void main(String args[]){
+Address address=new Address();
+Employee employee=new Employee(1,address);
+}
+}
+
+
+
+-----------------------------------
+public interface Address{}
+public class PostalAddress implements Address{}
+public class EmailAddress implements Address{}
+
+
+public class Employee {
+private int id;
+private Address address;
+public Employee(int id,Address address){
+this.id=id;
+this.address=address;
+}
+} 
+
+public class Tester{
+public static void main(String args[]){
+Address address=new EmailAddress();
+Employee employee=new Employee(1,address);
+}
+}
+-----------------------------------------------------------------
