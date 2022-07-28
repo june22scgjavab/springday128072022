@@ -106,5 +106,18 @@ use to mark a class as a Spring Bean.
 	  
 	 @Service    @Repository    @Controller 
   
+  -------------------------------------------------------------------------------
+  
+  * Class and Object
+  * methods
+  * methods return type and parameters.
+  * Interfaces
+  * Exceptions
+  * Constructors in parent and derived.
+  * Logger
+  * Properties
+  * Collection classes
+  * Type conversion and casting in reference type 
+  ---------------------------------------------------------------------------------
   
   
