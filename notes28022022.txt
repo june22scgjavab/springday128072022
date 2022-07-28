@@ -50,3 +50,61 @@ Employee employee=new Employee(1,address);
 }
 }
 -----------------------------------------------------------------
+Let us create a project which will make use of spring framework to create
+object of a class.
+STEP1:- We will create a maven project. The advantage of maven project is
+we dont have to manually download the dependencies and put in the buildpath/classpath.
+In maven project we have pom.xml where we can mention the dependencies required
+by the project.
+
+STEP2: update pom.xml for java version for 
+* compiler
+* target
+
+https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html
+
+
+<properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+  </properties>
+  
+  add dependencies  spring-context
+  https://mvnrepository.com/
+  get the dependencies required from the above link.
+  
+  
+  <dependencies>
+  <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>5.3.22</version>
+</dependency>
+ </dependencies>
+  
+  -------------------------------------------
+  STEP 3 :-
+  
+  Create 3 classes.
+  1) The class whose object we want to create 
+  with the help of IOC container ( ApplicationContext).
+  2) The configuration class with annotation 
+     @Configuration
+  3) The Tester class having the main method.	
+
+-----------------------------------------------------
+We will learn to use stereotype annotations:-
+@Component==> It is a generic annotation
+use to mark a class as a Spring Bean.
+@Service
+@Repository
+@Controller
+ 
+                 @Component
+	  
+	  
+	 @Service    @Repository    @Controller 
+  
+  
+  
